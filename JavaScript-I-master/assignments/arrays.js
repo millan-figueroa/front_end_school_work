@@ -73,10 +73,10 @@ console.log(`The last car is a ${inventory[49].car_make} ${inventory[49].car_mod
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-// let carModels = [];
-// let byMake = inventory.sort((a,b) => a.car_make.localeCompare(b.car_make));
-// let byModel = inventory.sort((a,b) => a.car_model.localeCompare(b.car_model));
-// console.log(byModel);
+let carModels = [];
+let byMake = inventory.sort((a,b) => a.car_make.localeCompare(b.car_make));
+let byModel = inventory.sort((a,b) => a.car_model.localeCompare(b.car_model));
+console.log(byModel);
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
@@ -86,11 +86,11 @@ for(let i = 0; i < inventory.length; i++){
     carYears.push(inventory[i].car_year);
 }
 
-// for (const prop in inventory){
-//     let i = 0;
-//     i++;
-//     carYears.push(inventory[0].car_year)
-// }
+for (const prop in inventory){
+    let i = 0;
+    i++;
+    carYears.push(inventory[0].car_year)
+}
 console.log(carYears);
 
 // ==== Challenge 5 ====
